@@ -75,7 +75,6 @@ class DataHandler():
 		Removes unnecessary rows and columns from the data file.
 		"""
 		df = pd.read_csv(f'{ self.station_id }_{ param_num }_data_file.csv', header=7, sep=';', usecols=[0,1,2,3])
-		print(df.head())
 		if df.columns.values[0] != 'Datum':
 			df = pd.read_csv(f'{ self.station_id }_{ param_num }_data_file.csv', header=6, sep=';', usecols=[0,1,2,3])
 		df.to_csv(f'{ self.station_id }_{ param_num }_data_file.csv')
