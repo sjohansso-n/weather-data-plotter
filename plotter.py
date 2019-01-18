@@ -115,9 +115,6 @@ class DataPlotter():
 		sns.set(rc={'figure.figsize':(12,4)})
 		rcParams['figure.figsize'] = 12,4
 
-	def __str__(self):
-		pass
-
 	def set_multiindex(self):
 		"""
 		Changes the index of the dataframe to a multiindex 
